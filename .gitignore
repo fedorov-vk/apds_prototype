@@ -1,0 +1,10 @@
+*.class
+bin/
+
+# src-gen is excluded on a per project basis
+#src-gen/
+xtend-gen/
+emf-gen/
+
+# for Maven builds
+target/
