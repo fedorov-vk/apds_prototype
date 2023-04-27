@@ -3,6 +3,9 @@ Bundle-ManifestVersion: 2
 Bundle-Name: snn.apds.dsl.attributes.model
 Bundle-SymbolicName: snn.apds.dsl.attributes.model; singleton:=true
 Bundle-Version: 0.1.0.qualifier
+Export-Package: snn.apds.dsl.attributes,
+ snn.apds.dsl.attributes.impl,
+ snn.apds.dsl.attributes.util
 Require-Bundle: org.eclipse.emf.ecore,
  org.eclipse.xtext.xbase.lib,
  org.eclipse.emf.ecore.xcore.lib
