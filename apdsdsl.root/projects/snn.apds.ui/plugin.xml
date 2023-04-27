@@ -17,6 +17,15 @@
             name="Apds Project Explorer"
             restorable="true">
       </view>
+      <view
+            allowMultiple="false"
+            category="snn.apds.ui.views.category"
+            class="snn.apds.ui.internal.ApdsUiExecutableExtensionFactory:snn.apds.ui.views.model.ModelView"
+            id="snn.apds.ui.views.model.ModelView"
+            inject="true"
+            name="Model View"
+            restorable="true">
+      </view>
    </extension>
    <extension
          point="org.eclipse.ui.navigator.viewer">
@@ -79,6 +88,12 @@
                relationship="left"
                relative="org.eclipse.ui.editorss"
                showTitle="true">
+         </view>
+         <view
+               id="snn.apds.ui.views.model.ModelView"
+               minimized="false"
+               relationship="stack"
+               relative="edit">
          </view>
       </perspectiveExtension>
    </extension>
