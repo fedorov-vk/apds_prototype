@@ -2,7 +2,7 @@
 <?eclipse version="3.4"?>
 <plugin>
    <extension
-         id="apds.nature"
+         id="snn.apds.core.apdsNature"
          point="org.eclipse.core.resources.natures">
       <runtime>
          <run

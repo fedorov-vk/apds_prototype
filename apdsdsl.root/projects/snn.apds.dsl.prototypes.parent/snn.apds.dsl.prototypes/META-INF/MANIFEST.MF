@@ -6,14 +6,17 @@ Bundle-Vendor: My Company
 Bundle-Version: 1.0.0.qualifier
 Bundle-SymbolicName: snn.apds.dsl.prototypes; singleton:=true
 Bundle-ActivationPolicy: lazy
-Require-Bundle: snn.apds.dsl.attributes.model,
- org.eclipse.xtext,
+Require-Bundle: org.eclipse.xtext,
  org.eclipse.xtext.xbase,
  org.eclipse.equinox.common;bundle-version="3.5.0",
  org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
  org.eclipse.xtext.util,
  org.eclipse.xtend.lib;bundle-version="2.14.0",
- org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)",
+ snn.apds.dsl.attributes.model,
+ snn.apds.core,
+ org.eclipse.xtext.common.types,
+ org.objectweb.asm;bundle-version="[9.4.0,9.5.0)";resolution:=optional
 Bundle-RequiredExecutionEnvironment: JavaSE-17
 Export-Package: snn.apds.dsl.prototypes.serializer,
  snn.apds.dsl.prototypes.parser.antlr,
@@ -23,5 +26,6 @@ Export-Package: snn.apds.dsl.prototypes.serializer,
  snn.apds.dsl.prototypes.parser.antlr.internal,
  snn.apds.dsl.prototypes.formatting2,
  snn.apds.dsl.prototypes.services,
- snn.apds.dsl.prototypes.validation
+ snn.apds.dsl.prototypes.validation,
+ snn.apds.dsl.prototypes.jvmmodel
 Import-Package: org.apache.log4j
